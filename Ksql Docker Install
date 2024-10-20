@@ -1,0 +1,74 @@
+
+To install Confluent SQL (KSQL) using Docker, you'll use the Confluent Platform Docker images. Confluent Platform includes various components like Kafka, Zookeeper, Confluent Control Center, KSQL (now called ksqlDB), Schema Registry, and more. The core steps to run ksqlDB in Docker are as follows:
+
+Steps to Install and Run Confluent ksqlDB using Docker:
+1. Install Docker
+
+If you haven't installed Docker yet, you need to install it first. You can get it from the Docker website.
+
+2. Create a Docker Compose File
+
+Create a docker-compose.yml file to define the services you need for Confluent Platform (including Kafka, Zookeeper, and ksqlDB).
+
+Here is an example docker-compose.yml for running Confluent Platform with ksqlDB:
+
+https://github.com/confluentinc/cp-all-in-one/blob/9a8f6b0a0e9aa7038cb2b621ab62b8c51b938345/cp-all-in-one-kraft/docker-compose.yml
+
+3. Download Docker Compose File
+
+You can download the above file by creating a file called docker-compose.yml in your working directory and pasting the content into it.
+
+4. Start the Confluent Platform
+
+To run the services defined in your docker-compose.yml file, navigate to the directory containing the file and run:
+
+bash
+
+docker-compose up -d
+This command will start all services in the background.
+
+5. Verify ksqlDB is Running
+
+After all services are up, you can check if the ksqlDB server is running by accessing its REST API:
+
+Open your browser and visit:
+http://localhost:8088/info
+
+You should see details about the ksqlDB server version.
+
+6. Use ksqlDB Command Line Interface (CLI)
+
+To interact with ksqlDB using its CLI, you can run:
+
+bash
+docker-compose exec ksqldb-cli ksql http://ksqldb-server:8088
+This opens the ksqlDB CLI where you can execute SQL queries.
+
+Example Query:
+Once in the CLI, you can list topics or create streams, e.g.,:
+
+sql
+
+SHOW TOPICS;
+
+CREATE STREAM pageviews \
+  (viewtime BIGINT, userid VARCHAR, pageid VARCHAR) \
+  WITH (KAFKA_TOPIC='pageviews',KEY_FORMAT='KAFKA', PARTITIONS=2, VALUE_FORMAT='JSON');
+This setup allows you to run Kafka, ksqlDB, and all essential components using Docker containers, creating a full-fledged streaming platform for stream processing with SQL-like syntax.
+
+7. Stopping the Services
+
+To stop all the services, you can run:
+
+bash
+
+docker-compose down
+This will stop and remove the containers.
+
+Summary of Docker Services
+Zookeeper: Manages Kafka cluster metadata.
+Kafka: The distributed event streaming platform.
+Schema Registry: Manages Avro schemas used by Kafka messages.
+ksqlDB Server: The server that executes ksqlDB queries.
+ksqlDB CLI: The command line tool for interacting with ksqlDB.
+That's it! You've successfully set up Confluent ksqlDB on Docker.
