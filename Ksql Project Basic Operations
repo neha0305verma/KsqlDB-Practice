@@ -4,3 +4,6 @@ ksql> CREATE STREAM pageviews \
 >  (viewtime BIGINT, userid VARCHAR, pageid VARCHAR) \
 >  WITH (KAFKA_TOPIC='pageviews',KEY_FORMAT='KAFKA', PARTITIONS=2, VALUE_FORMAT='JSON');
 
+SELECT userid, pageid, viewtime 
+FROM pageviews 
+WHERE pageid = 'homepage';
