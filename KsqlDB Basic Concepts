@@ -1,0 +1,67 @@
+1. Basic Concepts:
+i. What is KSQL DB? How does it differ from traditional databases?
+ii. Explain the architecture of KSQL DB and how it integrates with Apache Kafka.
+iii. What are the main use cases of KSQL DB?
+iv. What is the difference between a Kafka topic and a KSQL DB stream?
+v. What is a KSQL DB table? How does it differ from a stream?
+vi. What are the core components of KSQL DB?
+vii. Explain the difference between PULL and PUSH queries in KSQL DB.
+viii. Can you explain how KSQL DB processes continuous data?
+ix. How does KSQL DB ensure fault tolerance and scalability?
+x. What are the benefits of using KSQL DB over traditional stream processing tools like Apache Storm or Spark Streaming?
+
+2. Streams and Tables:
+i. What is the difference between a KSQL DB stream and a table?
+ii. When would you use a stream vs. a table in KSQL DB?
+iii. How do you convert a stream into a table in KSQL DB?
+iv. Can you join a stream with a table in KSQL DB? If yes, how?
+v. What are the different types of joins supported by KSQL DB (e.g., stream-stream, stream-table)?
+
+3. Querying and SQL:
+i. How do you write a simple query to select and filter data from a KSQL DB stream?
+ii. How do you create a stream from an existing Kafka topic in KSQL DB?
+iii. What are persistent and transient queries in KSQL DB? How do they differ?
+iv. Explain the GROUP BY and WINDOW clauses in KSQL DB queries.
+v. How does KSQL DB handle aggregations on streaming data?
+vi. What are windowed aggregations in KSQL DB, and when would you use them?
+vii. Can you explain how KSQL DB manages state in windowed queries?
+
+4. Advanced Topics:
+i. What are the limitations of KSQL DB when dealing with large-scale data processing?
+ii. How does KSQL DB handle schema evolution, and how can it deal with changes in Kafka topic schemas?
+iii. What is the role of Kafka Connect in KSQL DB workflows?
+iv. How does KSQL DB handle data consistency and exactly-once semantics?
+v. Can you explain how KSQL DB handles late-arriving data in streaming queries?
+vi. How would you implement a real-time anomaly detection system using KSQL DB?
+vii. What are KSQL DB user-defined functions (UDFs) and user-defined aggregate functions (UDAFs)? How do you create them?
+viii. How do you monitor and troubleshoot performance issues in KSQL DB?
+
+5. Use Cases and Best Practices:
+i. Can you give an example of a real-world use case for KSQL DB in a retail, finance, or IoT application?
+ii. How would you implement real-time fraud detection using KSQL DB?
+iii. How can you optimize the performance of KSQL DB queries?
+iv. What are some best practices for designing efficient KSQL DB queries?
+v. How do you handle data reprocessing in KSQL DB if the business logic changes?
+
+6. Integration and Deployment:
+i. How does KSQL DB integrate with Kafka Streams API?
+ii. How can you deploy KSQL DB in a production environment?
+iii. What are the key differences between using KSQL DB in a cloud-based solution like Confluent Cloud vs. self-managed deployment?
+iv. Can KSQL DB work with other streaming platforms, or is it exclusive to Kafka?
+v. How would you scale KSQL DB applications for high throughput?
+
+7. Data Management and Storage:
+i. How does KSQL DB manage state stores? What are state stores used for?
+ii. Explain the significance of topic partitioning in Kafka and how it impacts KSQL DB queries.
+iii. What happens if a KSQL DB node fails? How does it recover?
+iv. What are materialized views in KSQL DB, and how are they used in queries?
+v. Can you explain KSQL DB’s approach to handling message ordering?
+
+8. Security and Access Control:
+i. What security mechanisms are available for KSQL DB?
+ii. How can you enforce access control in KSQL DB for different users?
+iii. How do you secure data flowing through KSQL DB and Kafka topics (e.g., encryption, authentication)?
+
+9. Troubleshooting and Debugging:
+i. What are common errors you might encounter when working with KSQL DB? How would you troubleshoot them?
+ii. How would you debug a slow-performing KSQL DB query?
