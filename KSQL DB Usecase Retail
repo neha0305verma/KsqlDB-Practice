@@ -14,3 +14,22 @@ iii. Abandoned cart recovery by detecting customers who leave items in their car
 i. Identify suspicious transactions in real time.
 ii. Set up anomaly detection rules to flag unusual purchasing behavior (e.g., high-value purchases in a short time, high return rates, or purchasing from multiple stores simultaneously).
 iii. Trigger immediate alerts or block suspicious transactions.
+
+4. Dynamic Pricing
+i. Increase prices for products with high demand.
+ii. Offer discounts for products with low demand or overstock situations.
+iii. React to competitor price changes immediately by adjusting prices to remain competitive.
+
+5. Supply Chain Optimization
+i. Track shipments in real time and optimize delivery routes.
+ii. Monitor supplier performance and detect potential delays.
+iii. Automate reordering based on live inventory and sales data.
+
+6. Real-Time Promotions and Offers
+i. Trigger instant discounts or limited-time offers for customers who show interest in specific products.
+ii. Customize promotions based on current buying trends or inventory surpluses.
+
+7. Customer Feedback and Sentiment Analysis
+i. Monitor social media mentions of products and brands to gauge public sentiment.
+ii. Detect negative feedback or reviews early to respond and improve customer satisfaction.
+iii. Analyze feedback trends to identify potential product or service issues.
