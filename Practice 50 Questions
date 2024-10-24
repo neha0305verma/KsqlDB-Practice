@@ -1,0 +1,64 @@
+Basic Concepts
+
+1.	What is KSQL DB, and how does it relate to Apache Kafka?
+2.	Explain the difference between a stream and a table in KSQL DB.
+3.	How do you create a stream in KSQL DB from an existing Kafka topic?
+4.	What is a persistent query, and how is it different from a transient query in KSQL DB?
+5.	How can you terminate a running query in KSQL DB?
+6.	How do you create a table in KSQL DB from a stream?
+7.	What is the purpose of a changelog topic in KSQL DB?
+8.	What data format types does KSQL DB support?
+9.	How do you inspect the schema of a stream or table in KSQL DB?
+10.	Explain the concept of a materialized view in KSQL DB.
+
+SQL Syntax in KSQL DB
+
+1.	Write a query to select all fields from a stream called orders_stream.
+2.	How do you filter events in a stream to include only records with price > 100?
+3.	What SQL command would you use to join two streams, orders and customers, on a common field customer_id?
+4.	Write a query to calculate the average order_amount from a stream transactions.
+5.	How do you perform a LEFT JOIN between a stream and a table in KSQL DB?
+6.	Explain how you would perform a GROUP BY operation in KSQL DB.
+7.	Write a query that selects records from a stream, where a specific field is NULL.
+8.	How do you rename a column in a KSQL DB query result?
+9.	Explain the use of PARTITION BY in KSQL DB queries.
+10.	How can you handle NULL values in KSQL DB?
+
+Aggregations and Windowing
+
+1.	What is the purpose of windowing in KSQL DB?
+2.	Write a query to count the number of events in a stream over a 5-minute tumbling window.
+3.	Explain the difference between a hopping window and a tumbling window.
+4.	How do you create a session window aggregation in KSQL DB?
+5.	What is the significance of GROUP BY in windowed queries?
+6.	Write a query to calculate the total sales per store_id every hour.
+7.	How do you handle overlapping time windows in KSQL DB?
+8.	What is the WINDOWSTART function used for in KSQL DB?
+9.	Write a query to calculate the maximum temperature over a 10-minute window.
+10.	Explain how KSQL DB handles late-arriving events in windowed queries.
+
+Built-in Functions
+
+1.	What is the purpose of scalar functions in KSQL DB?
+2.	How do you convert a string to lowercase in KSQL DB?
+3.	Write a query that uses SUBSTRING() to extract part of a string from a stream.
+4.	How do you compute the distance between two geographical points in KSQL DB?
+5.	Write a query that uses LAG() to calculate the difference between current and previous values in a stream.
+6.	How would you use the COALESCE() function in KSQL DB to handle missing data?
+7.	Explain the role of aggregate functions like COUNT() and SUM() in KSQL DB.
+8.	Write a query that calculates the sum of sales grouped by product_id.
+9.	How do you extract the year from a timestamp in KSQL DB?
+10.	Write a query to calculate the moving average over the last 10 events.
+
+Advanced Concepts
+
+1.	How does KSQL DB achieve fault tolerance?
+2.	What is the role of Kafka Streams in KSQL DB architecture?
+3.	Explain how KSQL DB handles stateful operations like aggregations.
+4.	How does KSQL DB perform distributed processing across multiple nodes?
+5.	What is the purpose of changelog topics in state recovery?
+6.	How do you write a user-defined function (UDF) in KSQL DB?
+7.	What are user-defined aggregate functions (UDAFs) in KSQL DB, and how are they used?
+8.	Explain how KSQL DB supports exactly-once semantics (EOS).
+9.	How does KSQL DB scale to handle large amounts of data?
+10.	What are the best practices for optimizing performance in KSQL DB queries?
