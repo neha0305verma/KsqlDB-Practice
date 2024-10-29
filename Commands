@@ -1,0 +1,7 @@
+cd Downloads/
+ls
+docker-compose up -d
+browser : http://localhost:8088/info
+docker-compose exec ksqldb-cli ksql http://ksqldb-server:8088
+show topics
+
